@@ -7,7 +7,7 @@ namespace UnitTests
     public class CalculatorTests
     {
         [Fact]
-        public void GrossSalary_UnderNonTaxableMinimum()
+        public void _01_GrossSalary_UnderNonTaxableMinimum()
         {
             // Arrange
             decimal grossSalary = 980;
@@ -21,7 +21,7 @@ namespace UnitTests
         }
 
         [Fact]
-        public void GrossSalary_EqualToNonTaxableMinimum()
+        public void _02_GrossSalary_EqualToNonTaxableMinimum()
         {
             // Arrange
             decimal grossSalary = 1000;
@@ -35,7 +35,7 @@ namespace UnitTests
         }
 
         [Fact]
-        public void GrossSalary_AboveNonTaxableMinimum_UnderSocialUpperBorder()
+        public void _03_GrossSalary_AboveNonTaxableMinimum_UnderSocialUpperBorder()
         {
             // Arrange
             decimal grossSalary = 2500;
@@ -49,7 +49,7 @@ namespace UnitTests
         }
 
         [Fact]
-        public void GrossSalary_EqualToSocialUpperBorder()
+        public void _04_GrossSalary_EqualToSocialUpperBorder()
         {
             // Arrange
             decimal grossSalary = 3000;
@@ -63,7 +63,7 @@ namespace UnitTests
         }
 
         [Fact]
-        public void GrossSalary_AboveSocialUpperBorder()
+        public void _05_GrossSalary_AboveSocialUpperBorder()
         {
             // Arrange
             decimal grossSalary = 3400;
@@ -77,7 +77,7 @@ namespace UnitTests
         }
 
         [Fact]
-        public void GrossSalary_Negative_ThrowException()
+        public void _06_GrossSalary_Negative_ThrowException()
         {
             // Arrange
             decimal grossSalary = -1;
