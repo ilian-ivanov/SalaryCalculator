@@ -10,8 +10,15 @@ namespace SalaryCalculator
 
             if (decimal.TryParse(Console.ReadLine(), out decimal grossSalary))
             {
-                var netSalary = Calculator.CalculateNetSalary(grossSalary);
-                Console.WriteLine($"The net salary is: {netSalary}");
+                try
+                {
+                    var netSalary = Calculator.CalculateNetSalary(grossSalary);
+                    Console.WriteLine($"The net salary is: {netSalary}");
+                }
+                catch(ArgumentException ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
             else
             {
